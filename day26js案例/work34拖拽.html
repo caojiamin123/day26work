@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work34拖拽</title>
+		<style type="text/css">
+			#div{
+				width: 200px;
+				height: 200px;
+				border: #000 2px solid;
+				margin: 100px auto;
+				text-align: center;
+				line-height: 200px;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div">请将文件拖到此处</div>
+	</body>
+	<script type="text/javascript">
+		var odiv=document.getElementById("div");
+		
+		document.ondragenter=function(){
+			odiv.style.display="block";
+		}
+	</script>
+</html>

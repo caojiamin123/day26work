@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work6file2</title>
+	</head>
+	<body>
+		<input type="file" name="" id="txt" multiple/>
+	</body>
+	<script type="text/javascript">
+		var otxt=document.getElementById("txt");
+		
+		otxt.onchange=function(ev){
+			var ofile=ev.srcElement.files[0];
+			//alert(ofile.name);   //文件名字
+			//alert(ofile.type);  //文件类型
+			alert(ofile.size);  //文件大小
+		}
+	</script>
+</html>

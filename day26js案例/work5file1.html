@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work5file1</title>
+	</head>
+	<body>
+		<input type="file" name="" id="txt" multiple/>
+	</body>
+	<script type="text/javascript">
+		var otxt=document.getElementById("txt");
+		
+		otxt.onchange=function(ev){
+			var afile=ev.srcElement.files;
+			alert(afile.length);
+		}
+	</script>
+</html>

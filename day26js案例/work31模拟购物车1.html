@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work31模拟购物车1</title>
+	</head>
+	<body>
+		总价：￥<strong id="strong">xx</strong>元
+	</body>
+	<script type="text/javascript">
+		var ostrong=document.getElementById("strong");
+		
+		window.onstorage=function(){
+			var n=localStorage.yf;
+			ostrong.innerHTML=n*10;
+		}
+	</script>
+</html>

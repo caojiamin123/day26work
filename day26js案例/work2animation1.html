@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>work2animation1</title>
+		<style type="text/css">
+			@-webkit-keyframes move{
+				0%{
+					left:0;
+					top:0;
+					}
+				25%{
+					left:400px;
+					top:0;
+				}
+				50%{
+					left:400px;
+					top:400px;
+				}
+				75%{
+					left:0;
+					top:400px;
+				}
+				100%{
+					left:0;
+					top:0;
+					}
+			}
+			#div{
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: absolute;
+				left: 0;
+				top: 0;
+				animation: move 5s cubic-bezier(0.44,-0.03,0.13,0.22);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div"></div>
+	</body>
+</html>
